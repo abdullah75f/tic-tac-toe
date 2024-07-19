@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         if(cell.textContent.trim() !== "" || !gameActive){
             return ; 
-
         }
         cell.textContent = currentPlayer;
     }
