@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     function checkForDraw() {
         const allCellsFilled = Array.from(cells).every(cell => cell.textContent.trim() !== '');
         if (allCellsFilled) {
-            winnerIndicator.textContent = 'Draw!';
+            winnerIndicator.textContent = '`Ladies and Gents, its a Draw !';
             gameActive = false;
         }
     }
