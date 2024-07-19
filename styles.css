@@ -53,5 +53,10 @@ footer {
   background-color: #f0f0f0;
 }
 .game-container .board .cell:nth-child(odd) {
-  background-color: red;
+  background-color: rgb(182, 190, 132);
+}
+
+.player-turn {
+  font-size: 30px;
+  margin-bottom: 10px;
 }
