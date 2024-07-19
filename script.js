@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded",()=>{
         currentPlayer = currentPlayer === "X" ? "O" : "X";
     }
 
+    function checkWinner(){
+        let 1Roun
+    }
+
     // cells.forEach(cell => {
     //     cell.addEventListener('click', cellClick);
     // });
