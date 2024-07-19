@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         if (oneRoundWon){
             winnerIndicator.textContent = `Ladies and Gents, player ${currentPlayer} Wins !`
+            
             gameActive = false;
             return;
             
