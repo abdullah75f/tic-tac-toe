@@ -23,3 +23,17 @@ footer {
   text-align: center;
 
 }
+
+
+.game-container{
+    width:50%;
+    background-color: green;
+    position:absolute;
+    top:25%;
+    left:25%;
+    right:25%;
+    bottom:25%;
+    height:50%;
+    
+    
+}
