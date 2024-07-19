@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded",()=>{
     const cells = document.querySelectorAll(".cell");
     let currentPlayer = "X";
     const playerTurnIndicator = document.querySelector(".player-turn");
-    const score = document.querySelector("score");
+    const scoreX = document.querySelector(".x");
+    const scoreO = document.querySelector(".y");
     const winnerIndicator =document.querySelector(".winner-indicator");
     let gameActive = true;
 
@@ -50,7 +51,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         if (oneRoundWon){
             winnerIndicator.textContent = `Ladies and Gents, player ${currentPlayer} Wins !`
-            
+
             gameActive = false;
             return;
             
