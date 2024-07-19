@@ -3,10 +3,13 @@ document.addEventListener("DOMContentLoaded",()=>{
     const cells = document.querySelectorAll(".cell");
     let currentPlayer = "X";
     const playerTurnIndicator = document.querySelector(".player-turn");
-    const scoreX = document.querySelector(".x");
-    const scoreO = document.querySelector(".y");
+    // const scoreX = document.querySelector(".x");
+    // const scoreO = document.querySelector(".y");
     const winnerIndicator =document.querySelector(".winner-indicator");
     let gameActive = true;
+
+    // let scoreOfX = 0;
+    // let scoreOfY = 0;
 
     const whenToWin = [[0,1,2], [3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
     
@@ -59,7 +62,13 @@ document.addEventListener("DOMContentLoaded",()=>{
         }
     }
 
-    //here
+    function checkForDraw() {
+        const allCellsFilled = Array.from(cells).every(cell => cell.textContent.trim() !== '');
+        if (allCellsFilled) {
+            winnerIndicator.textContent = 'Draw!';
+            gameActive = false;
+        }
+    }
 
     // cells.forEach(cell => {
     //     cell.addEventListener('click', cellClick);
