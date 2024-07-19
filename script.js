@@ -1,3 +1,5 @@
 document.addEventListener("DOMContentLoaded",()=>{
-    cp
+    const cells = document.querySelectorAll(".cell");
+    let currenPlayer = "X";
+    const playerTurnIndicator = document.querySelector(".player-turn");
 })
