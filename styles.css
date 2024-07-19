@@ -11,7 +11,7 @@ header nav ul {
   justify-content: flex-end;
   gap: 50px;
   list-style: none;
-  
+
   font-size: 20px;
 }
 
@@ -21,19 +21,38 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-
 }
 
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-.game-container{
-    width:50%;
-    background-color: green;
-    position:absolute;
-    top:25%;
-    left:25%;
-    right:25%;
-    bottom:25%;
-    height:50%;
-    
-    
+  margin-top: 150px;
+}
+
+.game-container .board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 390px;
+}
+
+.game-container .board .cell {
+  width: 120px; /* Example width */
+  height: 120px; /* Example height */
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  /* Add border, background, etc., as needed */
+}
+
+.game-container .board .cell:nth-child(even) {
+  background-color: #f0f0f0;
+}
+.game-container .board .cell:nth-child(odd) {
+  background-color: red;
 }
