@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             if( a === ""  || b === "" || c === ""){
                 continue;
             }
-            if(a === b && b == C){
+            if(a === b && b == c){
                 oneRoundWon = true;
                 break
 
@@ -50,9 +50,14 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         if (oneRoundWon){
             winnerIndicator.textContent = `Ladies and Gents, player ${currentPlayer} Wins !`
+            gameActive = false;
+            return;
+            
 
         }
     }
+
+    //here
 
     // cells.forEach(cell => {
     //     cell.addEventListener('click', cellClick);
