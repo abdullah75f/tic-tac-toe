@@ -17,6 +17,13 @@ document.addEventListener("DOMContentLoaded",()=>{
             return ; 
         }
         cell.textContent = currentPlayer;
+        // checkwinner();
+        // checkDraw();
+        switchPlayers();
+    }
+
+    function switchPlayers(){
+        currentPlayer = currentPlayer === "X" ? "O" : "X";
     }
 
     // cells.forEach(cell => {
