@@ -27,7 +27,13 @@ document.addEventListener("DOMContentLoaded",()=>{
     }
 
     function checkWinner(){
-        let 1Roun
+        let oneRoundWon = false;
+        for(let i = 0; i<whenToWin.length; i++
+        ){
+            const winCond = whenToWin[i];
+            const a = winCond[0]
+
+        }
     }
 
     // cells.forEach(cell => {
