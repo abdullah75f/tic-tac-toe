@@ -56,7 +56,8 @@ footer {
   background-color: rgb(182, 190, 132);
 }
 
-.player-turn, .score{
+.player-turn,
+.score {
   font-size: 30px;
   margin-bottom: 10px;
 }
