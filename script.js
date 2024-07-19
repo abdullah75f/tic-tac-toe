@@ -37,7 +37,14 @@ document.addEventListener("DOMContentLoaded",()=>{
             const b = cells[winCond[1]];
             const c = cells[winCond[2]];
 
-            if()
+            if( a === ""  || b === "" || c === ""){
+                continue;
+            }
+            if(a === b && b == C){
+                oneRoundWon = true;
+                break
+
+            }
 
 
         }
