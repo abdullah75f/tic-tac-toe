@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded",()=>{
             return ; 
         }
         cell.textContent = currentPlayer;
-        // checkwinner();
-        // checkDraw();
+        checkWinner();
+        checkForDraw();
         switchPlayers();
     }
 
@@ -70,9 +70,11 @@ document.addEventListener("DOMContentLoaded",()=>{
         }
     }
 
-    // cells.forEach(cell => {
-    //     cell.addEventListener('click', cellClick);
-    // });
+
+    cells.forEach(cell => {
+        cell.addEventListener('click', cellClick);
+    });
+    
     
 });
 
