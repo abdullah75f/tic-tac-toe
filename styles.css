@@ -1,0 +1,10 @@
+body{
+    background-color: rgb(29, 29, 29);
+}
+header nav ul{
+    display:flex;
+    justify-content: flex-end;
+    gap:50px;
+    list-style:none;
+    color:white;
+}
