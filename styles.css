@@ -1,12 +1,24 @@
-body{
-    background-color: rgb(29, 29, 29);
-}
-header nav ul{
-    display:flex;
-    justify-content: flex-end;
-    gap:50px;
-    list-style:none;
-    color:white;
-    
+body {
+  background-color: rgb(29, 29, 29);
 }
 
+header {
+  margin: 20px;
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  list-style: none;
+  color: white;
+  font-size: 20px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
