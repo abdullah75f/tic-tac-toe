@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded",()=>{
             const winCond = whenToWin[i];
             
             const a = cells[winCond[0]].textContent;//Since winCond contains indices of cells that need to be checked for a win condition, cells[winCond[0]] accesses the cell at that index. The .textContent property gets or sets the text content of the specified element, which in this case, would be either "X", "O", or an empty string if the cell is not filled.
-            const b = cells[winCond[1]];
-            const c = cells[winCond[2]];
+            const b = cells[winCond[1]].textContent;
+            const c = cells[winCond[2]].textContent;
 
             if( a === ""  || b === "" || c === ""){
                 continue;
